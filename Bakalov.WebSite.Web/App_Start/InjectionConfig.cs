@@ -67,7 +67,8 @@ namespace Bakalov.WebSite.Web.App_Start
         /// </summary>
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
-        {
+        {           
+
             kernel.Bind(x =>
             {
                 x.FromThisAssembly()
@@ -86,6 +87,8 @@ namespace Bakalov.WebSite.Web.App_Start
             kernel.Bind(typeof(IEfRepository<>)).To(typeof(EfRepostory<>));
             kernel.Bind<ISaveContext>().To<SaveContext>();
             kernel.Bind<IMapper>().To<Mapper>();
+
         }
+        
     }
 }
