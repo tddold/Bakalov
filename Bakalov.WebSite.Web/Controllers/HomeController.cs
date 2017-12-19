@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Bakalov.WebSite.Services.Contrcts;
 using Bakalov.WebSite.Web.Models.Home;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace Bakalov.WebSite.Web.Controllers
         {
             var post = postService
                 .GetAll()
-                .Select(x => this.mapper.Map<PostViewModel>(x))
+                .ProjectTo<PostViewModel>()
                 .ToList();
 
             var viewModel = new HomeViewModel()
