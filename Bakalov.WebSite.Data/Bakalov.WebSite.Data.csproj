@@ -65,6 +65,10 @@
     <Compile Include="Migrations\201711140227182_Seed.Designer.cs">
       <DependentUpon>201711140227182_Seed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803060134563_AddModels.cs" />
+    <Compile Include="Migrations\201803060134563_AddModels.Designer.cs">
+      <DependentUpon>201803060134563_AddModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MsSqlDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711140227182_Seed.resx">
       <DependentUpon>201711140227182_Seed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803060134563_AddModels.resx">
+      <DependentUpon>201803060134563_AddModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

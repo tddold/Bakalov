@@ -16,6 +16,28 @@ namespace Bakalov.WebSite.Data
 
         public IDbSet<Post> Posts { get; set; }
 
+        public IDbSet<Item> Items { get; set; }
+
+        public IDbSet<ItemImage> ItemImages { get; set; }
+
+        public IDbSet<ItemSpecification> ItemSpecifications { get; set; }
+
+        public IDbSet<Folder> Folders { get; set; }
+
+        public IDbSet<FolderCategory> FolderCategories { get; set; }
+
+        public IDbSet<Order> Orders { get; set; }
+
+        public IDbSet<OrderData> OrderDatas { get; set; }
+
+        public IDbSet<OrderInvoiceData> OrderInvoiceDatas { get; set; }
+
+        public IDbSet<Promotion> Promotions { get; set; }
+
+        public IDbSet<Category> Categories { get; set; }
+
+        public IDbSet<Carousel> Carousels { get; set; }
+
         public override int SaveChanges()
         {
             ApplyAuditInfoRules();
